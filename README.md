@@ -9,6 +9,8 @@ This application solves the problem of **resource scheduling** for small busines
 - **Admins** to manage employee schedules and work assignments
 - **Clients** to book available time slots for services
 
+App is Desktop first, not focused on mobile views
+
 ## 🚀 Main Technologies
 
 ### Backend
@@ -30,6 +32,7 @@ This application solves the problem of **resource scheduling** for small busines
 
 - Node.js 20.10.0 (use NVM: `nvm use`)
 - Git
+- **Port availability**: Ensure ports 3000 and 3001 are free (or update environment variables)
 
 ### 2. Setup
 
@@ -69,7 +72,6 @@ cp server/env.example server/.env
 cp client/env.example client/.env
 
 # Edit configuration files as needed
-# Server: Configure email settings in server/.env
 # Client: Configure API URL in client/.env
 ```
 
@@ -119,9 +121,11 @@ cp client/env.example client/.env
 
 1. **Select Date** - Choose when you need service
 2. **Choose Employee** - Pick from available workers
-3. **Pick Time Slot** - Select from available hours
+3. **Pick Time Slot** - Select from available 1-hour slots
 4. **Fill Details** - Enter your information and work type
 5. **Submit** - Complete the booking
+
+> **Note**: Time slots are currently set to 1-hour duration, but admins can change duration of assignment and it can be more that 1h.
 
 **Work Types Available**:
 
@@ -137,7 +141,7 @@ cp client/env.example client/.env
 1. **Setup**: Add employees with their work hours
 2. **Planning**: Create assignments or let clients book
 3. **Management**: Monitor calendar, update statuses
-4. **Notifications**: Receive email alerts for new bookings
+4. **Notifications**: Receive email alerts for new bookings (Email content is seen in console of server)
 
 ### Client Flow
 
@@ -188,7 +192,7 @@ Currently configured for **console logging** (PoC mode):
 
 - Employee notifications when assignments are created/updated
 - Admin notifications when clients make bookings
-- All email content is logged to console
+- All email content is logged to console (server)
 
 ## 🌍 Language & Localization
 
@@ -227,6 +231,16 @@ VITE_API_URL=http://localhost:3001
 ### Work Hours Configuration
 
 Default work hours are 08:00-16:30, configurable per employee in the admin interface.
+
+## 🚀 Future Developments & Technical Debt
+
+- **Estonian localization**: Change server response messages to Estonian
+- **Configurable time slots**: Make time slot durations configurable per work type
+- **Authentication**: Add user authentication and role-based access control
+- **Error handling**: Improve error messages and user feedback
+- **Testing**: Add comprehensive test coverage for frontend components
+- **Performance**: Optimize calendar rendering for large datasets
+- **Mobile optimization**: Improve mobile responsiveness
 
 ## 📝 License
 
