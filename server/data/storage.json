@@ -1,0 +1,146 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Artjom Gussev",
+      "email": "agus@company.com",
+      "workHours": {
+        "start": "09:30",
+        "end": "17:30"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Jaan Kask",
+      "email": "jaan.kask@company.com",
+      "workHours": {
+        "start": "08:00",
+        "end": "16:30"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Liis Pärn",
+      "email": "liis.parn@company.com",
+      "workHours": {
+        "start": "08:00",
+        "end": "16:30"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Toomas Tamm",
+      "email": "toomas.tamm@company.com",
+      "workHours": {
+        "start": "08:00",
+        "end": "16:30"
+      }
+    }
+  ],
+  "workAssignments": [
+    {
+      "employeeId": "1",
+      "clientName": "Test Customer",
+      "clientPhone": "5454",
+      "clientAddress": "dfdfd",
+      "workType": "measurement",
+      "startTime": "2025-10-23T09:00:00.000Z",
+      "endTime": "2025-10-23T10:00:00.000Z",
+      "comment": "",
+      "status": "completed",
+      "id": "assignment-1761242257970-9nzxe0qfj",
+      "createdAt": "2025-10-23T17:57:37.970Z",
+      "updatedAt": "2025-10-26T16:06:21.820Z"
+    },
+    {
+      "employeeId": "1",
+      "clientName": "tedt333",
+      "clientPhone": "4554",
+      "clientAddress": "fgfgfdfdfdfd",
+      "workType": "measurement",
+      "startTime": "2025-10-23T08:00:00.000Z",
+      "endTime": "2025-10-23T11:00:00.000Z",
+      "comment": "",
+      "status": "scheduled",
+      "id": "assignment-1761243095014-ixxfio81p",
+      "createdAt": "2025-10-23T18:11:35.014Z",
+      "updatedAt": "2025-10-26T16:16:35.828Z"
+    },
+    {
+      "employeeId": "2",
+      "clientName": "uuuh",
+      "clientPhone": "7878",
+      "clientAddress": "fghghg",
+      "workType": "consultation",
+      "startTime": "2025-10-23T02:08",
+      "endTime": "2025-10-24T03:08",
+      "comment": "",
+      "status": "scheduled",
+      "id": "assignment-1761243536259-mu2qbrrao",
+      "createdAt": "2025-10-23T18:18:56.259Z",
+      "updatedAt": "2025-10-23T18:18:56.259Z"
+    },
+    {
+      "employeeId": "1",
+      "clientName": "artjom",
+      "clientPhone": "545454343",
+      "clientAddress": "fdfd",
+      "workType": "measurement",
+      "startTime": "2025-10-23T10:00:00.000Z",
+      "endTime": "2025-10-23T11:00:00.000Z",
+      "comment": "",
+      "status": "scheduled",
+      "id": "assignment-1761247028782-6plyqcczy",
+      "createdAt": "2025-10-23T19:17:08.782Z",
+      "updatedAt": "2025-10-23T19:17:08.782Z"
+    },
+    {
+      "employeeId": "1",
+      "clientName": "John Doe",
+      "clientPhone": "3445454",
+      "clientAddress": "Suur patarei",
+      "workType": "demolition",
+      "startTime": "2025-10-27T08:00:00.000Z",
+      "endTime": "2025-10-27T11:00:00.000Z",
+      "comment": "lisaingo puudub",
+      "status": "cancelled",
+      "id": "assignment-1761418097520-7raa4xugs",
+      "createdAt": "2025-10-25T18:48:17.520Z",
+      "updatedAt": "2025-10-26T14:21:51.701Z"
+    },
+    {
+      "employeeId": "1",
+      "clientName": "test",
+      "clientPhone": "3434",
+      "clientAddress": "434",
+      "workType": "measurement",
+      "startTime": "2025-10-23T00:00",
+      "endTime": "2025-10-23T14:00",
+      "comment": "",
+      "status": "scheduled",
+      "id": "assignment-1761427828254-xiw40s3b6",
+      "createdAt": "2025-10-25T21:30:28.254Z",
+      "updatedAt": "2025-10-26T14:00:15.847Z"
+    },
+    {
+      "employeeId": "1",
+      "clientName": "Denis",
+      "clientPhone": "545454",
+      "clientAddress": "Latvia",
+      "workType": "demolition",
+      "startTime": "2025-10-27T11:00:00.000Z",
+      "endTime": "2025-10-27T13:00:00.000Z",
+      "comment": "",
+      "status": "scheduled",
+      "id": "assignment-1761488501643-i3am644p2",
+      "createdAt": "2025-10-26T14:21:41.643Z",
+      "updatedAt": "2025-10-26T14:21:41.643Z"
+    }
+  ],
+  "settings": {
+    "workStartTime": "08:00",
+    "workEndTime": "16:30",
+    "slotDuration": 60,
+    "adminEmail": "admin@company.com"
+  }
+}
